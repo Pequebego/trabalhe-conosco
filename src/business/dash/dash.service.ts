@@ -42,7 +42,7 @@ export class DashService {
     //Separa o array em multiplos arrays de int, iterando a cultura plantada.
     let culturas = safras.reduce((acc, safra) => {
       if (!acc[safra.culturaPlantada]) {
-        acc[safra.culturaPlantada] = [];
+        acc[safra.culturaPlantada] = 0;
       }
 
       acc[safra.culturaPlantada] += 1;
